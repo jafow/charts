@@ -186,10 +186,10 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
     - labelSelector:
         matchExpressions:
-        - key: app
+        - key: service
           operator: In
           values:
-          - {{ template "traefik.name" . }}
+          - "traefik"
       topologyKey: failure-domain.beta.kubernetes.io/zone
 
 nodeSelector: {}
