@@ -9,7 +9,7 @@ image:
 deployment:
   enabled: true
   # Number of pods of the deployment
-  replicas: 1
+  replicas: "rendered_from_helmfile"
   # Additional deployment annotations (e.g. for jaeger-operator sidecar injection)
   annotations: {}
   # Additional pod annotations (e.g. for mesh injection or prometheus scraping)
