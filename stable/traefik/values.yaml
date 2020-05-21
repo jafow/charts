@@ -2,6 +2,9 @@
 image:
   name: traefik
   tag: 2.2.1
+ 
+nameOverride: jafow-traefik
+fullnameOverride: jafow-traefik
 
 #
 # Configure the deployment
@@ -188,6 +191,7 @@ affinity:
           values:
           - {{ template "traefik.name" . }}
       topologyKey: failure-domain.beta.kubernetes.io/zone
+
 nodeSelector: {}
 tolerations: []
 
