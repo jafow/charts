@@ -1,0 +1,12 @@
+apiVersion: v1
+name: demo
+version: 1.0.0
+appVersion: 1.0.0
+description: A demo
+keywords:
+  - demo
+  - stuff
+maintainers:
+  - name: jafow
+    email: jared.a.fowler@gmail.com
+engine: gotpl
